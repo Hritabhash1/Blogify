@@ -37,30 +37,22 @@ Follow these steps to get your local development environment up and running.
 ### Installation
 
 1. Clone the repository to your local machine:
-   ```bash
-   git clone https://github.com/your-username/blogify.git
+   
 Navigate into the project folder:
 
-bash
-Copy code
 cd blogify
 Install the necessary dependencies:
 
-bash
-Copy code
+
 npm install
 Create a .env file in the root directory and add your environment variables:
 
 env
-Copy code
-MONGO_URL=mongodb://localhost:27017/blogify  # Or your MongoDB connection string
-JWT_SECRET=your_jwt_secret
+MONGO_URL=mongodb://localhost:27017/blogify 
 Run the application locally:
 
-bash
-Copy code
 npm run dev
-This will start the application on http://localhost:3000.
+This will start the application on http://localhost:8000.
 
 File Upload Configuration
 If you want to upload images, the application stores them in the public/uploads directory. You can modify this to use cloud storage services like AWS S3 for production.
@@ -81,23 +73,7 @@ POST /upload: Handle image uploads.
 Deployment
 This app is ready to be deployed on platforms like Render, Heroku, or Vercel. If deploying to Render, make sure to use persistent storage for file uploads, such as AWS S3, since Render's filesystem is ephemeral.
 
-Example Deployment on Render
-Push the code to a GitHub repository.
-Create a new Render web service.
-Connect your GitHub repository to Render.
-Set up environment variables on Render:
-MONGO_URL
-JWT_SECRET
-Deploy the service.
-Contributing
-Fork the repository.
-Create a new branch (git checkout -b feature-branch).
-Make your changes.
-Commit your changes (git commit -am 'Add new feature').
-Push to the branch (git push origin feature-branch).
-Create a new Pull Request.
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+
 
 Acknowledgments
 Node.js
@@ -107,8 +83,3 @@ Mongoose
 Bootstrap
 Multer
 vbnet
-Copy code
-
-### Key Updates:
-- The **Live Demo** section now includes the link to your hosted application on Render:  
-  [https://blogify-s1ah.onrender.com/](https://blogify-s1ah.onrender.com/).
