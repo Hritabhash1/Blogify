@@ -57,7 +57,7 @@ This will start the application on http://localhost:8000.
 File Upload Configuration
 If you want to upload images, the application stores them in the public/uploads directory. You can modify this to use cloud storage services like AWS S3 for production.
 
-Routes
+### Routes
 GET /: Home page displaying all the blog posts.
 GET /login: User login page.
 POST /login: User login action.
@@ -70,12 +70,13 @@ GET /edit/:id: Edit a specific blog post.
 POST /edit/:id: Update a blog post.
 POST /delete/:id: Delete a specific blog post.
 POST /upload: Handle image uploads.
-Deployment
+
+### Deployment
 This app is ready to be deployed on platforms like Render, Heroku, or Vercel. If deploying to Render, make sure to use persistent storage for file uploads, such as AWS S3, since Render's filesystem is ephemeral.
 
 
 
-Acknowledgments
+## Acknowledgments
 Node.js
 Express.js
 EJS
